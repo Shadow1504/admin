@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="/api/users" method="post">
+            <div class="name">
+            <h3>NAME</h3>
+            <input type="text" name="name">
+            </div>
+            <div class="age">
+                <h3>AGE</h3>
+            <input type="text" name="age">  
+            </div>
+            <div class="phone">
+                <h3>PHONE</h3>
+            <input type="number" name="phone">  
+            </div>
+            <div class="email">
+                <h3>EMAIL</h3>
+            <input type="text" name="email">
+            </div>
+            <div class="10th" >
+                <h3>STANDARD X</h3>
+                <input type="number" name="ten" placeholder="Mark in percentage">
+            </div>
+            <div class="12th">
+            <h3>STANDARD XII</h3>
+            <input type="number" name="twelve" placeholder="Mark in percentage">
+            </div>
+            <div class="degree">
+                <h3>ENTER DGREE</h3>
+                <input type="text" name="degree">
+            </div>
+            <div class="dep">
+                <h3>SELECT SPECIALIZATION</h3>
+                <input type="text" name="stream">
+            </div>
+            <div class="submit">
+            <button type="submit" onClick="result">Add</button>
+            </div>
+        </form>
+     
+    </div>
+</body>
+</html>
